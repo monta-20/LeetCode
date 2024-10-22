@@ -5,16 +5,17 @@ using namespace std;
 class Solution {
 public:
     int lengthOfLastWord(string s) {
-        //split in two part
-        int i  = s.size()-1 ;
-        int count = 0 ;
-        //fix i when is not space
-        while(s[i] == ' ') i--;
-        //then calculate the result
-        while(s[i] !=' ' && i>=0) {
+        int i  = s.size() - 1;
+        int count = 0;
+
+        // Skip trailing spaces
+        while(i >= 0 && s[i] == ' ') i--;
+
+        // Count the length of the last word
+        while(i >= 0 && s[i] != ' ') {
             count++;
             i--;
-        }    
-        return count ;
+        }
+        return count;
     }
 };
