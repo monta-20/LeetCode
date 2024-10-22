@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 #include <iostream>
-#include <WinSock2.h>
 #include<string>
 using namespace std;
 class Solution {
@@ -19,7 +18,3 @@ public:
     }
 };
 
-/*This repository contains various solutions to programming challenges and problems, 
-showcasing my problem-solving skills and proficiency in programming language
- C++.The primary aim of this repository is to provide a collection of algorithms and
- implementations that tackle common and complex problems in computer science.*/
